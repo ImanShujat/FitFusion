@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitfusion Login</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e9f5e9; /* Light greenish background for a fresh look */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            width: 360px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: #00796b; /* Fresh green gradient */
+            padding: 40px;
+            text-align: center;
+            color: white;
+        }
+
+        .header img {
+            width: 60px; /* Logo size */
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .form-container {
+            padding: 40px;
+        }
+
+        .form-container h2 {
+            font-size: 20px;
+            margin-bottom: 30px;
+            color: #333;
+            text-align: center;
+        }
+
+        .form-container label {
+            font-size: 14px;
+            color: #555;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+        }
+
+        .form-container .actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .form-container .actions input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .form-container .actions a {
+            color: #28a745; /* Green color for the link */
+            text-decoration: none;
+        }
+
+        .form-container .actions a:hover {
+            text-decoration: underline;
+        }
+
+        .form-container .buttons {
+            margin-top: 30px;
+        }
+
+        .form-container .loginbtn {
+            background-color: #00796b; /* Fresh green color */
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .form-container .signup-link {
+            text-align: center;
+        }
+
+        .form-container .signup-link a {
+            color: #00796b;
+            text-decoration: none;
+        }
+
+        .form-container .signup-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <!-- Add your logo here -->
+            <img src="FitFussion-removebg-preview.png" alt="Fitfusion Logo">
+            <h1>Fitfusion</h1>
+        </div>
+
+        <div class="form-container">
+            <h2>Log in to your account</h2>
+            <form action="login.php" method="POST">
+                <label for="email">E-mail Address</label>
+                <input type="text" placeholder="Enter your email" name="email" required>
+
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter your password" name="password" required>
+
+                <div class="buttons">
+                    <button type="submit" class="loginbtn">Log In</button>
+                </div>
+
+                <div class="signup-link">
+                    <span>Don't have an account? <a href="signup.html">Sign Up</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

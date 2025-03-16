@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitfusion Sign Up</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e9f5e9; /* Light greenish background for a fresh look */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            width: 850px;
+            height: 500px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .left-panel {
+            background: #00796b; /* Fresh green gradient */
+            width: 50%;
+            padding: 40px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .left-panel img {
+            width: 80px; /* Logo size */
+            margin-bottom: 20px;
+        }
+
+        .left-panel h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .left-panel p {
+            margin: 20px 0;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .right-panel {
+            background-color: #fff;
+            width: 50%;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .right-panel h1 {
+            font-size: 24px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .right-panel label {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .right-panel input[type="text"],
+        .right-panel input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0 20px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+        }
+
+        .right-panel .actions {
+            display: flex;
+            align-items: center;
+        }
+
+        .right-panel .actions input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .right-panel .actions span {
+            font-size: 12px;
+        }
+
+        .right-panel .actions a {
+            color: #28a745; /* Green color for the link */
+            text-decoration: none;
+        }
+
+        .right-panel .actions a:hover {
+            text-decoration: underline;
+        }
+
+        .right-panel .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .right-panel .signupbtn {
+            background-color: #00796b; /* Fresh green color */
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 48%;
+        }
+
+        .right-panel .signinbtn {
+            background-color: #ffffff;
+            color: #00796b;
+            border: 1px solid #00796b;
+            padding: 12px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 48%;
+        }
+
+        .right-panel .signinbtn:hover {
+            background-color: #00796b;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Left panel for branding -->
+        <div class="left-panel">
+            <!-- Add your logo here -->
+            <img src="FitFussion-removebg-preview.png" alt="Fitfusion Logo">
+            <h1>Welcome to Fitfusion</h1>
+            <p>Join our community and start your fitness journey with customized plans, progress tracking, and more.</p>
+        </div>
+
+        <!-- Right panel for form -->
+        <div class="right-panel">
+            <h1>Create your account</h1>
+            <form action="signup.php" method="POST">
+                <label for="name">Name</label>
+                <input type="text" placeholder="Enter your name" name="name" required>
+
+                <label for="email">E-mail Address</label>
+                <input type="text" placeholder="Enter your email" name="email" required>
+
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter your password" name="password" required>
+
+
+                <div class="buttons">
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                    <button type="button" class="signinbtn" onclick="window.location.href='login.html';">Log In</button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
